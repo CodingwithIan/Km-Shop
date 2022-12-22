@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673994369732",
+    "project_id": "km-shopping-93bbb",
+    "storage_bucket": "km-shopping-93bbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673994369732:android:daced7bcc2cdbf8a7cf791",
+        "android_client_info": {
+          "package_name": "com.ian.km"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673994369732-mavoh54g530qj6c0fr8f6ub8uk60j6kg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0EHvcOhfOdQl1H23WVRQKEGUAf60vhcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673994369732-mavoh54g530qj6c0fr8f6ub8uk60j6kg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:layout_margin="40dp"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+        app:helperText="Required"
+        app:helperTextTextColor="#D84315"
+        app:prefixText="+254"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="192dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_phone_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="106dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        app:counterEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true"
+        app:counterMaxLength="10"
+        app:helperText="Required"
+        app:helperTextTextColor="#D84315"
+        app:layout_constraintBottom_toTopOf="@+id/register_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextInputLayout"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Register"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="371dp">
+
+    </com.rey.material.widget.Button>
+
+</LinearLayout>
